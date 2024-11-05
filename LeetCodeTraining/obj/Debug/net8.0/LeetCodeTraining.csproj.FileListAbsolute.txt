@@ -1,0 +1,15 @@
+C:\Users\dnova\source\repos\leetcode\LeetCodeTraining\bin\Debug\net8.0\LeetCodeTraining.exe
+C:\Users\dnova\source\repos\leetcode\LeetCodeTraining\bin\Debug\net8.0\LeetCodeTraining.deps.json
+C:\Users\dnova\source\repos\leetcode\LeetCodeTraining\bin\Debug\net8.0\LeetCodeTraining.runtimeconfig.json
+C:\Users\dnova\source\repos\leetcode\LeetCodeTraining\bin\Debug\net8.0\LeetCodeTraining.dll
+C:\Users\dnova\source\repos\leetcode\LeetCodeTraining\bin\Debug\net8.0\LeetCodeTraining.pdb
+C:\Users\dnova\source\repos\leetcode\LeetCodeTraining\obj\Debug\net8.0\LeetCodeTraining.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dnova\source\repos\leetcode\LeetCodeTraining\obj\Debug\net8.0\LeetCodeTraining.AssemblyInfoInputs.cache
+C:\Users\dnova\source\repos\leetcode\LeetCodeTraining\obj\Debug\net8.0\LeetCodeTraining.AssemblyInfo.cs
+C:\Users\dnova\source\repos\leetcode\LeetCodeTraining\obj\Debug\net8.0\LeetCodeTraining.csproj.CoreCompileInputs.cache
+C:\Users\dnova\source\repos\leetcode\LeetCodeTraining\obj\Debug\net8.0\LeetCodeTraining.sourcelink.json
+C:\Users\dnova\source\repos\leetcode\LeetCodeTraining\obj\Debug\net8.0\LeetCodeTraining.dll
+C:\Users\dnova\source\repos\leetcode\LeetCodeTraining\obj\Debug\net8.0\refint\LeetCodeTraining.dll
+C:\Users\dnova\source\repos\leetcode\LeetCodeTraining\obj\Debug\net8.0\LeetCodeTraining.pdb
+C:\Users\dnova\source\repos\leetcode\LeetCodeTraining\obj\Debug\net8.0\LeetCodeTraining.genruntimeconfig.cache
+C:\Users\dnova\source\repos\leetcode\LeetCodeTraining\obj\Debug\net8.0\ref\LeetCodeTraining.dll
