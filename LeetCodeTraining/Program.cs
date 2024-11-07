@@ -2,4 +2,4 @@
 using LeetCode.Arrays;
 
 ArraysTraining arrays = new ArraysTraining ();
-arrays.TwoPointer ();
+arrays.TwoPointerTargetWhile ();
