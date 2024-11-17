@@ -1,3 +1,6 @@
+using System.Globalization;
+using System.Runtime.Versioning;
+
 namespace LeetCode.Arrays {
     public class ArraysTraining {
         public void TwoPointerPalindrome () {
@@ -96,5 +99,91 @@ namespace LeetCode.Arrays {
                 Console.WriteLine ("It is not an anagram");
             }
         }
+
+        public void isAnagramWithSortSolution () {
+            // Base method implementation
+            string s = "anagram";
+            string t = "nagaram";
+
+            if (s.Length != t.Length) {
+                Console.WriteLine ("It is not an anagram");
+                return;
+            }
+
+            var s_sorted = s.ToCharArray ().OrderBy (x => x).ToArray ();
+            var t_sorted = t.ToCharArray ().OrderBy (x => x).ToArray ();
+
+            for (int i = 0; i < s_sorted.Length; i++) {
+                if (s_sorted[i] != t_sorted[i]) {
+                    Console.WriteLine ("It is not an anagram");
+                    return;
+                }
+            }
+
+            Console.WriteLine ("Is anagram");
+
+        }
+
+        public void isAnagramWithFrequencyCount () {
+            // Base method implementation
+            string s = "anagram";
+            string t = "nagaram";
+
+            if (s.Length != t.Length) {
+                Console.WriteLine ("It is not an anagram");
+                return;
+            }
+
+            Dictionary<char, int> s_freq = new Dictionary<char, int> ();
+
+            for (int i = 0; i < s.Length; i++) {
+                if (s_freq.ContainsKey (s[i])) {
+                    s_freq[s[i]]++;
+                } else {
+                    s_freq.Add (s[i], 1);
+                }
+            }
+
+            for (int j = 0; j < t.Length; j++) {
+                if (s_freq.ContainsKey (t[j])) {
+                    s_freq[t[j]]--;
+                } else {
+                    Console.WriteLine ("It is not an anagram");
+                    return;
+                }
+            }
+
+            foreach (var item in s_freq) {
+                if (item.Value != 0) {
+                    Console.WriteLine ("It is not an anagram");
+                    return;
+                }
+            }
+
+            Console.WriteLine ("Is anagram");
+        }
+
+        public void isAnagramSortEnhanced () {
+            // Base method implementation
+            string s = "anagram";
+            string t = "nagaram";
+
+            if (s.Length != t.Length) {
+                Console.WriteLine ("It is not an anagram");
+                return;
+            }
+
+            Dictionary<char, int> s_freq = new Dictionary<char, int> ();
+
+            string s_sorted = new string (s.OrderBy (x => x).ToArray ());
+            string t_sorted = new string (t.OrderBy (x => x).ToArray ());
+
+            if (s_sorted != t_sorted) {
+                Console.WriteLine ("It is not an anagram");
+                return;
+            }
+            Console.WriteLine ("Is anagram");
+        }
+
     }
 }

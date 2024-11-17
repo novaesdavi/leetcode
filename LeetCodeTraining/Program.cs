@@ -2,4 +2,4 @@
 using LeetCode.Arrays;
 
 ArraysTraining arrays = new ArraysTraining ();
-arrays.isAnagram ();
+arrays.isAnagramSortEnhanced ();
