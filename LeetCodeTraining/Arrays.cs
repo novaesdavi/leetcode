@@ -68,5 +68,33 @@ namespace LeetCode.Arrays {
             }
 
         }
+
+        public void isAnagram () {
+            // Base method implementation
+            string s = "anagram";
+            string t = "nagaram";
+            Dictionary<int, char> dict = new Dictionary<int, char> ();
+
+            if (s.Length != t.Length) {
+                Console.WriteLine ("It is not an anagram");
+                return;
+            }
+
+            for (int i = 0; i < t.Length; i++) {
+                for (int j = 0; j < s.Length; j++) {
+                    if (t[i] == s[j]) {
+                        dict.Add (i, s[j]);
+                        s.Remove (j);
+                        break;
+                    }
+                }
+            }
+
+            if (dict.Count == s.Length) {
+                Console.WriteLine ("Is anagram");
+            } else {
+                Console.WriteLine ("It is not an anagram");
+            }
+        }
     }
 }
