@@ -4,10 +4,12 @@ public class JosephusProblemGroup {
     // Definição do nó
     public class Node {
         public int Data;
+        public char Group;
         public Node Next;
 
-        public Node (int data) {
+        public Node (int data, char group) {
             Data = data;
+            Group = group;
             Next = null;
         }
     }
@@ -15,8 +17,8 @@ public class JosephusProblemGroup {
     private Node head = null;
 
     // Método para adicionar um nó ao final da lista circular
-    public void Add (int data) {
-        Node newNode = new Node (data);
+    public void Add (int data, char group) {
+        Node newNode = new Node (data, group);
         if (head == null) {
             head = newNode;
             head.Next = head;
@@ -31,7 +33,7 @@ public class JosephusProblemGroup {
     }
 
     // Método para resolver o problema de Josephus
-    public int SolveJosephus (int step) {
+    public char SolveJosephus (int step) {
         if (head == null || step < 1)
             throw new ArgumentException ("Lista está vazia ou passo inválido.");
 
@@ -47,12 +49,12 @@ public class JosephusProblemGroup {
             }
 
             // Remover o nó atual
-            Console.WriteLine ($"Eliminando: {current.Data}");
+            Console.WriteLine ($"Eliminando: {current.Group}");
             previous.Next = current.Next;
             current = current.Next;
         }
 
         // O último nó restante é o sobrevivente
-        return current.Data;
+        return current.Group;
     }
 }

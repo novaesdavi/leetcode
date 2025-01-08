@@ -6,4 +6,4 @@ using LeetCode.Arrays;
 
 LinkedLists linkedLists = new LinkedLists ();
 
-linkedLists.ExecuteJosephusProblem ();
+linkedLists.ExecuteJosephusProblemGroup ();

@@ -31,14 +31,15 @@ public class LinkedLists {
 
         // Criar o círculo
         for (int i = 1; i <= n; i++) {
-            list.Add (i);
+            char group = i % 2 == 0 ? 'B' : 'A';
+            list.Add (i, group);
         }
 
         // Resolver o problema de Josephus
         Console.WriteLine ("Resolvendo o problema de Josephus...");
-        int survivor = list.SolveJosephus (step);
+        char survivor = list.SolveJosephus (step);
 
-        Console.WriteLine ($"\nA pessoa que sobreviveu está na posição: {survivor}");
+        Console.WriteLine ($"\nO grupo que sobreviveu é o: {survivor}");
 
     }
 
