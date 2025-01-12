@@ -184,6 +184,38 @@ namespace LeetCode.Arrays {
             }
             Console.WriteLine ("Is anagram");
         }
+        public void CelebrityProblem () {
+
+            int[][] InPut = new int[][] {
+                new int[] { 0, 0, 1, 0 },
+                new int[] { 0, 0, 1, 0 },
+                new int[] { 0, 0, 1, 0 },
+                new int[] { 0, 0, 1, 0 },
+
+            };
+            int[] Knowledge = new int[] { 0, 0, 0, 0 };
+            for (int i = 0; i < InPut.Length; i++) {
+
+                for (int j = 0; j < InPut[i].Length; j++) {
+                    Console.WriteLine ($"InPut[{i}][{j}] = {InPut[i][j]}");
+                    if (InPut[i][j] == 1) {
+                        Knowledge[i] = j;
+                        break;
+                    }
+                }
+            }
+
+            for (int i = 0; i < Knowledge.Length; i++) {
+                if (Knowledge[i] == 0) {
+                    Console.WriteLine ($"Celebrity: {i}");
+                    return;
+                }
+
+            }
+
+            Console.WriteLine ("No celebrity found");
+
+        }
 
     }
 }
