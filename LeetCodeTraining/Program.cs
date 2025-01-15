@@ -1,10 +1,13 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using LeetCode.Arrays;
 
-ArraysTraining arrays = new ArraysTraining ();
-arrays.isAnagramSortEnhanced ();
+QueueTraining queue = new QueueTraining ();
 
-arrays.CelebrityProblem ();
+queue.QueueBuiltWrongly ();
+// ArraysTraining arrays = new ArraysTraining ();
+// arrays.isAnagramSortEnhanced ();
+
+// arrays.CelebrityProblem ();
 
 // LinkedLists linkedLists = new LinkedLists ();
 

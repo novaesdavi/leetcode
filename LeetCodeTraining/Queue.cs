@@ -6,8 +6,16 @@
      int tail = 0;
      public void QueueBuiltWrongly () {
 
-         for (int i = 0; i < 7; i++) {
-             Enqueue (i);
+         for (int i = 0; i < 4; i++) {
+             Enqueue (i); //First value in
+         }
+
+         for (int i = 0; i < 2; i++) {
+             Dequeue (); //First out
+         }
+
+         for (int i = 0; i < 4; i++) {
+             Enqueue (i); //First value in
          }
 
      }
@@ -22,7 +30,21 @@
      }
 
      private bool IsQueueFull () {
-         return tail == queue.Length - 1;
+         //  return tail == queue.Length - 1;
+         return tail == queue.Length;
+     }
+
+     public void Dequeue () {
+         if (IsQueueEmpty ()) {
+             Console.WriteLine ("Queue is empty");
+         } else {
+             queue[head] = 0;
+             head++;
+         }
+     }
+
+     private bool IsQueueEmpty () {
+         return head == tail;
      }
 
      public void QueueExampleByQueueInDotNet () {
